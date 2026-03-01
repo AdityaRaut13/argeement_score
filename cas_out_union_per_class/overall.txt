@@ -1,0 +1,8 @@
+matched_cases: 6
+mode: union_per_class
+total_area_a: 961072848.0
+total_area_b: 698391869.0
+total_area_intersection: 370097941.0
+micro_precision_area: 0.529929
+micro_recall_area: 0.385088
+micro_f1_area: 0.446045

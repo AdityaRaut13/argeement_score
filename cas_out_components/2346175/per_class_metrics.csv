@@ -1,0 +1,10 @@
+class,gt,pred,TP,FP,FN,precision,recall,f1,mean_cas_on_matches,mean_oc_on_matches,mean_ar_on_matches,area_a,area_b,area_intersection
+Architecture normal,0,2,0,2,0,0.0,nan,nan,nan,nan,nan,,,
+Basal Plasmacytosis,16,8,0,8,16,0.0,0.0,nan,nan,nan,nan,,,
+Basal lymphoid aggregates,5,6,3,1,2,0.75,0.6,0.6666666666666665,0.9063781232001489,0.9388648619998254,1.6237889820000235,,,
+Crypt abscess,1,1,1,0,0,1.0,1.0,1.0,0.8769148978637824,0.8769633507853403,1.0212468038475588,,,
+Focal (<50%) crypt distortion,0,7,0,7,0,0.0,nan,nan,nan,nan,nan,,,
+Marked (>50%) crypt distortion,7,0,0,0,7,nan,0.0,nan,nan,nan,nan,,,
+Moderate to marked mononuclear cell infiltrate,29,13,6,7,22,0.46153846153846156,0.21428571428571427,0.2926829268292683,0.8270400264433934,0.8488138316453928,1.5283015988409494,,,
+No/ mild mononuclear cell infiltrate,15,0,0,0,15,nan,0.0,nan,nan,nan,nan,,,
+Ulcer/ erosion,9,4,2,2,7,0.5,0.2222222222222222,0.30769230769230765,0.9452803682532789,0.994718309859155,1.87405151445705,,,

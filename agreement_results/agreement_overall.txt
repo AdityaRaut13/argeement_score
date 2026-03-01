@@ -1,7 +1,0 @@
-cases: 5
-total_A: 240
-total_B: 355
-total_matches: 62
-micro_precision: 0.1746
-micro_recall: 0.2583
-micro_f1: 0.2084

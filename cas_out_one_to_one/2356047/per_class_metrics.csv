@@ -1,0 +1,7 @@
+class,gt,pred,TP,FP,FN,precision,recall,f1,mean_cas_on_matches,mean_oc_on_matches,mean_ar_on_matches,area_a,area_b,area_intersection
+Basal Plasmacytosis,8,4,0,4,8,0.0,0.0,nan,nan,nan,nan,,,
+Basal lymphoid aggregates,4,2,0,2,4,0.0,0.0,nan,nan,nan,nan,,,
+Focal (<50%) crypt distortion,0,1,0,1,0,0.0,nan,nan,nan,nan,nan,,,
+Marked (>50%) crypt distortion,5,2,0,2,5,0.0,0.0,nan,nan,nan,nan,,,
+Moderate to marked mononuclear cell infiltrate,23,12,0,12,23,0.0,0.0,nan,nan,nan,nan,,,
+Ulcer/ erosion,2,6,0,6,2,0.0,0.0,nan,nan,nan,nan,,,

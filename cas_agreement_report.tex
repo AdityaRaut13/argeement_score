@@ -1,0 +1,253 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{xurl}   % best at breaking long strings
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible
+}
+
+\title{Containment-Aware Agreement for GeoJSON Annotations with Split--Merge Robust Evaluation}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report presents a containment-aware evaluation framework for inter-annotator agreement on region annotations stored in GeoJSON, motivated by histopathology workflows in which annotators may differ substantially in localization strictness and in whether they split or merge regions.
+Conventional Intersection-over-Union (IoU) can underestimate agreement when one annotator draws strict (tight) regions and another draws loose (coarse) regions that nonetheless contain the relevant tissue structures.
+The proposed framework replaces IoU with a \emph{Containment-Aware Similarity} (CAS) score and provides three complementary evaluation modes: (i) one-to-one instance matching, (ii) union-per-class area agreement, and (iii) connected-component grouping for split--merge robust count-based scoring.
+A directory-wise implementation evaluates all matching subdirectories between two directory roots and optionally exports merged GeoJSON files with match metadata for qualitative inspection.
+\end{abstract}
+
+\section{Introduction}
+Inter-annotator agreement for detection-style annotations is often evaluated by matching predicted and reference instances using IoU thresholds and reporting precision/recall/F1 or average precision.
+However, IoU assumes that annotators delineate regions with comparable tightness.
+In histopathology and related imaging tasks, one annotator may annotate only the minimal region corresponding to a structure of interest, while another may annotate a larger free-hand region that includes the same structure plus surrounding tissue.
+Although these annotations may be semantically aligned, IoU decreases due to a large union area relative to the intersection.
+
+A second common failure mode arises from \emph{split--merge} differences: one annotator may represent a single semantic region using multiple small boxes, while another uses a single large box.
+Strict one-to-one matching then produces artificially low agreement by forcing at most one small region to match the large region.
+This report describes a framework that addresses both issues by using CAS and by offering evaluation modes that are robust to split--merge variability.
+
+\section{Data Model and Problem Setup}
+Two annotation sources are compared for each case (folder):
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Annotator A:} treated as the reference set for evaluation purposes.
+  \item \textbf{Annotator B:} treated as the compared set for evaluation purposes.
+\end{itemize}
+
+Annotations are stored as GeoJSON \texttt{FeatureCollection}s where each feature contains:
+\begin{itemize}[leftmargin=*]
+  \item a geometry (Polygon or MultiPolygon),
+  \item a class label stored typically at \texttt{properties.classification.name}.
+\end{itemize}
+
+The evaluation is performed \emph{per class} and aggregated \emph{per folder}, enabling case-level summaries across many slides or regions.
+
+\section{Containment-Aware Similarity (CAS)}
+Let $P$ denote a region from annotator B and $G$ a region from annotator A.
+Denote their areas by:
+\[
+A_P = |P|,\quad A_G = |G|,\quad A_I = |P \cap G|.
+\]
+
+\subsection{Overlap Coefficient}
+A containment-friendly overlap measure is the overlap coefficient:
+\begin{equation}
+\mathrm{OC}(P,G) = \frac{A_I}{\min(A_P, A_G)}.
+\end{equation}
+This coefficient equals $1$ when the smaller region is fully contained in the larger region and therefore does not penalize additional area in loose annotations.
+
+\subsection{Symmetric Area Ratio}
+A symmetric size mismatch measure is:
+\begin{equation}
+\mathrm{AR}(P,G) = \frac{\max(A_P, A_G)}{\min(A_P, A_G)} \ge 1.
+\end{equation}
+
+\subsection{CAS Definition}
+CAS is defined as the overlap coefficient multiplied by a smooth size-mismatch penalty:
+\begin{equation}
+\mathrm{CAS}(P,G) = \mathrm{OC}(P,G)\cdot \exp\left(-\frac{(\ln \mathrm{AR}(P,G))^2}{2\sigma^2}\right),
+\end{equation}
+where $\sigma>0$ controls tolerance to size mismatch; larger $\sigma$ yields weaker penalization.
+When $\sigma \rightarrow \infty$ (or the penalty is disabled), CAS reduces to $\mathrm{OC}$.
+
+\paragraph{Interpretation.}
+CAS preserves the containment property of $\mathrm{OC}$ while discouraging degenerate cases in which extremely large regions trivially contain many smaller regions.
+
+\section{Agreement Evaluation Modes}
+The framework provides three evaluation modes, each addressing different annotation behaviors.
+
+\subsection{Mode 1: One-to-One Instance Matching (\texttt{one\_to\_one})}
+For each class $c$, the sets of instances $\{G_i\}_{i=1}^{n}$ (annotator A) and $\{P_j\}_{j=1}^{m}$ (annotator B) are compared.
+
+\paragraph{Candidate scoring.}
+CAS is computed for all candidate pairs $(P_j,G_i)$.
+For efficiency at scale, candidate generation can be accelerated using spatial indexing (e.g., R-tree queries).
+
+\paragraph{One-to-one assignment.}
+A one-to-one matching is computed using either:
+\begin{itemize}[leftmargin=*]
+  \item greedy maximum-CAS selection over pairs with $\mathrm{CAS}\ge\tau$, or
+  \item Hungarian maximum-weight assignment for small problems, with dummy nodes enabling unmatched items.
+\end{itemize}
+
+\paragraph{Counts and metrics.}
+At a CAS threshold $\tau$:
+\begin{itemize}[leftmargin=*]
+  \item $\mathrm{TP}$ equals the number of matched pairs,
+  \item $\mathrm{FP}$ equals unmatched B instances,
+  \item $\mathrm{FN}$ equals unmatched A instances.
+\end{itemize}
+Precision, recall, and F1 are computed in the usual manner.
+
+\paragraph{Limitation.}
+One-to-one matching can underestimate agreement when split--merge behavior is present (e.g., one large instance corresponding to multiple smaller instances).
+
+\subsection{Mode 2: Union-Per-Class Area Agreement (\texttt{union\_per\_class})}
+This mode removes instance matching entirely and is robust to split--merge variability.
+For each class $c$, union geometries are formed:
+\[
+A_c = \bigcup_i G_i,\qquad B_c = \bigcup_j P_j.
+\]
+Area-based precision and recall are defined by:
+\begin{equation}
+\mathrm{Precision}_c = \frac{|A_c\cap B_c|}{|B_c|},\qquad
+\mathrm{Recall}_c = \frac{|A_c\cap B_c|}{|A_c|}.
+\end{equation}
+F1 is computed from these quantities.
+
+\paragraph{Diagnostics.}
+In addition, $\mathrm{CAS}(A_c,B_c)$, $\mathrm{OC}(A_c,B_c)$, and $\mathrm{AR}(A_c,B_c)$ are reported as union-level diagnostics, along with areas $|A_c|$, $|B_c|$, and $|A_c\cap B_c|$.
+
+\paragraph{Property.}
+Union-per-class scoring is invariant to instance splitting/merging within a class, provided the unioned regions remain the same.
+
+\subsection{Mode 3: Connected-Component Split--Merge Grouping (\texttt{components})}
+This mode provides count-based agreement while remaining robust to split--merge variability.
+For each class $c$, a bipartite graph is constructed:
+\begin{itemize}[leftmargin=*]
+  \item nodes correspond to individual A instances and B instances,
+  \item an edge connects $G_i$ and $P_j$ if $\mathrm{CAS}(P_j,G_i)\ge\tau$.
+\end{itemize}
+Connected components in this graph represent \emph{groups} of instances believed to refer to the same semantic region under split--merge behavior.
+
+\paragraph{Component counting.}
+Let a component contain $n_A$ A-instances and $n_B$ B-instances.
+It is categorized as:
+\begin{itemize}[leftmargin=*]
+  \item \textbf{TP component} if $n_A\ge 1$ and $n_B\ge 1$,
+  \item \textbf{FN component} if $n_A\ge 1$ and $n_B=0$,
+  \item \textbf{FP component} if $n_A=0$ and $n_B\ge 1$.
+\end{itemize}
+Component-level precision/recall/F1 are then computed using TP/FP/FN component counts.
+
+\paragraph{Component quality diagnostics.}
+For each component, union geometries are computed:
+\[
+A_k = \bigcup_{i\in k} G_i,\qquad B_k = \bigcup_{j\in k} P_j,
+\]
+and union-level CAS/OC/AR and areas are reported as diagnostics.
+
+\paragraph{Advantages.}
+Unlike one-to-one matching, this mode does not penalize a single large annotation being represented by multiple smaller annotations, yet it avoids the inflation risk of unconstrained many-to-many matching by scoring at the component level.
+
+\section{Directory-Level Evaluation Protocol}
+The implementation evaluates agreement across entire directory trees.
+Let $A_{\mathrm{root}}$ and $B_{\mathrm{root}}$ be directory roots.
+The procedure is:
+\begin{enumerate}[leftmargin=*]
+  \item Recursively enumerate all \texttt{*.geojson} files under each root.
+  \item Group files by their \emph{relative parent directory} (relative to the root).
+  \item Identify keys present in both roots and treat each key as a matched case.
+  \item For each matched case, load all features from the GeoJSON files under that folder and evaluate agreement per class using the selected mode.
+\end{enumerate}
+
+\section{Outputs}
+For each matched folder key, the script writes:
+\begin{itemize}[leftmargin=*]
+  \item \texttt{per\_class\_metrics.csv}: per-class precision/recall/F1; TP/FP/FN semantics depend on mode,
+  \item \texttt{summary.json}: micro/macro summaries and configuration parameters,
+  \item \texttt{matches.csv}: detailed match records.
+\end{itemize}
+A global \texttt{cases\_summary.csv} and \texttt{overall.txt} are also written.
+
+\subsection{Mode-Dependent Semantics of \texttt{matches.csv}}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{one\_to\_one:} one row per matched pair with CAS/OC/AR and areas.
+  \item \textbf{union\_per\_class:} one row per class with union-level CAS/OC/AR and union areas.
+  \item \textbf{components:} one row per connected component with membership lists and union-level diagnostics.
+\end{itemize}
+
+\subsection{Optional GeoJSON Exports}
+When enabled, the script exports \texttt{combined\_AB.geojson} containing all features from both sources with source-tagged labels (e.g., ``A $|$ ClassName'') and an attached \texttt{match} property carrying match metadata.
+Additionally:
+\begin{itemize}[leftmargin=*]
+  \item \texttt{matched\_AB.geojson} is written in \textbf{one\_to\_one} mode containing only matched pairs.
+  \item \texttt{matched\_AB.geojson} is written in \textbf{components} mode containing only TP components.
+  \item \texttt{matched\_AB.geojson} is not meaningful in \textbf{union\_per\_class} mode and is therefore omitted.
+\end{itemize}
+
+\section{Usage Examples}
+One-to-one matching:
+\begin{lstlisting}
+python cas_agreement_dir_eval_v3.py \
+  --a_root /path/to/A \
+  --b_root /path/to/B \
+  --out cas_out \
+  --mode one_to_one \
+  --cas_thr 0.5 \
+  --sigma 1.0 \
+  --matching greedy \
+  --write_geojson
+\end{lstlisting}
+
+Union-per-class:
+\begin{lstlisting}
+python cas_agreement_dir_eval_v3.py \
+  --a_root /path/to/A \
+  --b_root /path/to/B \
+  --out cas_out \
+  --mode union_per_class \
+  --sigma 1.0 \
+  --write_geojson
+\end{lstlisting}
+
+Connected components:
+\begin{lstlisting}
+python cas_agreement_dir_eval_v3.py \
+  --a_root /path/to/A \
+  --b_root /path/to/B \
+  --out cas_out \
+  --mode components \
+  --cas_thr 0.5 \
+  --sigma 1.0 \
+  --write_geojson
+\end{lstlisting}
+
+\section{Discussion and Limitations}
+Several considerations apply:
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Choice of $\tau$ and $\sigma$:} the CAS threshold $\tau$ controls what constitutes a link/match, and $\sigma$ controls tolerance to size mismatch. Both should be selected based on expected annotation variability.
+  \item \textbf{Degenerate containment:} overlap-coefficient-based measures can be high for overly large regions; the size penalty mitigates this, but extreme cases should be inspected.
+  \item \textbf{Class taxonomy consistency:} consistent class naming between sources is assumed; label normalization may be required.
+  \item \textbf{No confidence modeling:} as annotations are manual, standard confidence-based AP/mAP is not applicable. The framework reports thresholded agreement metrics and optional diagnostic summaries.
+\end{itemize}
+
+\section{Conclusion}
+This report described a containment-aware agreement framework for GeoJSON region annotations that is robust to differing localization strictness and split--merge annotation behavior.
+By using CAS in place of IoU and providing three evaluation modes---one-to-one instance matching, union-per-class area agreement, and connected-component grouping---the framework supports both instance-level auditing and robust case-level agreement estimation.
+The accompanying directory-wise implementation enables scalable evaluation and produces merged GeoJSON exports for qualitative validation.
+
+\end{document}

@@ -1,0 +1,16 @@
+{
+  "case_key": "S2415106A01",
+  "mode": "one_to_one",
+  "TP": 32,
+  "FP": 51,
+  "FN": 72,
+  "micro_precision": 0.3855421686746988,
+  "micro_recall": 0.3076923076923077,
+  "micro_f1": 0.34224598930481287,
+  "macro_f1": 0.3999367252283477,
+  "cas_threshold": 0.3,
+  "sigma": 2.0,
+  "matching": "greedy",
+  "hungarian_available": false,
+  "strtree_available": true
+}

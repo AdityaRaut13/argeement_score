@@ -1,0 +1,8 @@
+matched_cases: 6
+mode: one_to_one
+total_TP: 106
+total_FP: 158
+total_FN: 291
+micro_precision: 0.401515
+micro_recall: 0.267003
+micro_f1: 0.320726
