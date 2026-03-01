@@ -1,0 +1,25 @@
+case_id,a_idx,b_idx,iou,a_class,b_class
+S2415106A01,18,12,0.9198078814883398,Crypt abscess,Crypt abscess
+S2415106A01,17,13,0.8404351085289149,Crypt abscess,Crypt abscess
+S2415106A01,74,76,0.8101970542511363,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
+S2415106A01,78,61,0.7870865647005257,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
+S2415106A01,16,14,0.762882585048523,Crypt abscess,Crypt abscess
+S2415106A01,39,55,0.6919468591110383,Moderate to marked mononuclear cell infiltrate,Marked (>50%) crypt distortion
+S2415106A01,54,44,0.6555591415200903,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,24,40,0.6321424669507265,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+S2415106A01,31,85,0.6235023735965639,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+S2415106A01,47,67,0.5926803970958661,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,26,45,0.5913825868874573,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+S2415106A01,79,63,0.5816623206795901,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
+S2415106A01,41,22,0.581562434024332,Moderate to marked mononuclear cell infiltrate,Basal Plasmacytosis
+S2415106A01,69,42,0.5803445899379738,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,51,41,0.5795347511228748,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,29,39,0.5790122039388965,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+S2415106A01,80,77,0.5776149970627823,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
+S2415106A01,27,29,0.5564401680979589,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+S2415106A01,59,65,0.5505182438695543,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,68,34,0.547752808988764,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,75,70,0.519502531554199,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
+S2415106A01,40,60,0.5190281030444965,Moderate to marked mononuclear cell infiltrate,Marked (>50%) crypt distortion
+S2415106A01,44,68,0.5061585070240973,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+S2415106A01,58,92,0.5018004824868589,Basal lymphoid aggregates,Basal lymphoid aggregates

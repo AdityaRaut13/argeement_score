@@ -1,0 +1,4 @@
+# Ignore generated and dataset folders
+AIIMS_G/
+AIIMSD_all_annotations/
+DMC/

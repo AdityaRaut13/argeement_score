@@ -1,0 +1,12 @@
+case_id,a_idx,b_idx,iou,a_class,b_class
+2224413,16,27,0.7675434822103019,No/ mild mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+2224413,5,10,0.7117862146738202,Ulcer/ erosion,Ulcer/ erosion
+2224413,26,37,0.6645017648655986,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+2224413,8,28,0.6577287066246057,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+2224413,33,62,0.6191143194286954,Focal (<50%) crypt distortion,Architecture normal
+2224413,42,61,0.5973745766450365,Architecture normal,Architecture normal
+2224413,21,32,0.5955917321198833,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+2224413,18,31,0.5792051521057537,Basal Plasmacytosis,Moderate to marked mononuclear cell infiltrate
+2224413,30,19,0.5698630136986301,Moderate to marked mononuclear cell infiltrate,Moderate to marked mononuclear cell infiltrate
+2224413,41,50,0.5550219160034069,Focal (<50%) crypt distortion,Focal (<50%) crypt distortion
+2224413,34,56,0.5280335396545043,Marked (>50%) crypt distortion,Marked (>50%) crypt distortion
