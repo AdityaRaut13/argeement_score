@@ -126,8 +126,8 @@ if __name__ == "__main__":
     SCORE = calculate_agreement_score(
         file1_path=file1, 
         file2_path=file2, 
-        iou_threshold=0.1, 
-        area_threshold=175483.0# Set this to 0 for strict evaluation, or higher to forgive tiny mistakes
+        iou_threshold=0.3, 
+        area_threshold=0.0# Set this to 0 for strict evaluation, or higher to forgive tiny mistakes
     )
     
     print(f"Final Agreement Score: {SCORE:.4f}")
