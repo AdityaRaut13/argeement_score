@@ -1,0 +1,6 @@
+case_key,class,mode,unit_id,status,nA,nB,a_uids,b_uids,a_feat_ids,b_feat_ids,a_src_files,b_src_files,cas,oc,ar,area_a,area_b,area_intersection
+2346048,Basal Plasmacytosis,union_per_class,UNION,union_mode,3,0,,,,,,,0.0,0.0,inf,1095936.0,0.0,0.0
+2346048,Basal lymphoid aggregates,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,308880.0,0.0
+2346048,Marked (>50%) crypt distortion,union_per_class,UNION,union_mode,1,0,,,,,,,0.0,0.0,inf,10431744.0,0.0,0.0
+2346048,Moderate to marked mononuclear cell infiltrate,union_per_class,UNION,union_mode,5,6,,,,,,,0.9104771376587082,0.9909788004040788,2.277966032781163,6050304.0,13782387.0,5995723.0
+2346048,Ulcer/ erosion,union_per_class,UNION,union_mode,4,4,,,,,,,0.21107542829278,0.21253389578276213,1.264538497267225,1941982.0,2455711.0,412737.0

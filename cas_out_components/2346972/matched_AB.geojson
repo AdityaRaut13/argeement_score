@@ -454,72 +454,14 @@
           "status": "component_tp",
           "component_id": "No/ mild mononuclear cell infiltrate:comp_7",
           "class": "No/ mild mononuclear cell infiltrate",
-          "nA": 2,
+          "nA": 1,
           "nB": 1,
-          "cas_union": 0.5065769200277954,
-          "oc_union": 0.5067159830520193,
-          "ar_union": 1.0479748348164462,
-          "area_a_union": 405004.0,
+          "cas_union": 0.4973378988316019,
+          "oc_union": 0.5004163319828289,
+          "ar_union": 1.248801758303837,
+          "area_a_union": 339873.0,
           "area_b_union": 424434.0,
-          "area_intersection_union": 205222.0
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ffcb398f-8fe7-4a22-83eb-4b5af279bab8",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              15534.0,
-              27138.0
-            ],
-            [
-              15725.0,
-              27138.0
-            ],
-            [
-              15725.0,
-              27479.0
-            ],
-            [
-              15534.0,
-              27479.0
-            ],
-            [
-              15534.0,
-              27138.0
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "objectType": "annotation",
-        "classification": {
-          "name": "A | No/ mild mononuclear cell infiltrate",
-          "color": [
-            185,
-            185,
-            116
-          ]
-        },
-        "case_key": "2346972",
-        "source": "A",
-        "orig_class": "No/ mild mononuclear cell infiltrate",
-        "match": {
-          "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_7",
-          "class": "No/ mild mononuclear cell infiltrate",
-          "nA": 2,
-          "nB": 1,
-          "cas_union": 0.5065769200277954,
-          "oc_union": 0.5067159830520193,
-          "ar_union": 1.0479748348164462,
-          "area_a_union": 405004.0,
-          "area_b_union": 424434.0,
-          "area_intersection_union": 205222.0
+          "area_intersection_union": 170078.0
         }
       }
     },
@@ -568,7 +510,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_8",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_9",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -626,7 +568,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_9",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_10",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -684,7 +626,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_10",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_11",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -742,7 +684,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_12",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_13",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -800,7 +742,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_13",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_14",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -858,7 +800,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_14",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_15",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -916,7 +858,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_17",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_18",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1209,7 +1151,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_14",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_15",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1268,7 +1210,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_13",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_14",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1327,7 +1269,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_9",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_10",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1386,7 +1328,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_12",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_13",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1445,7 +1387,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_10",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_11",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1740,7 +1682,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_17",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_18",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1799,7 +1741,7 @@
         "orig_class": "No/ mild mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "No/ mild mononuclear cell infiltrate:comp_8",
+          "component_id": "No/ mild mononuclear cell infiltrate:comp_9",
           "class": "No/ mild mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1860,14 +1802,14 @@
           "status": "component_tp",
           "component_id": "No/ mild mononuclear cell infiltrate:comp_7",
           "class": "No/ mild mononuclear cell infiltrate",
-          "nA": 2,
+          "nA": 1,
           "nB": 1,
-          "cas_union": 0.5065769200277954,
-          "oc_union": 0.5067159830520193,
-          "ar_union": 1.0479748348164462,
-          "area_a_union": 405004.0,
+          "cas_union": 0.4973378988316019,
+          "oc_union": 0.5004163319828289,
+          "ar_union": 1.248801758303837,
+          "area_a_union": 339873.0,
           "area_b_union": 424434.0,
-          "area_intersection_union": 205222.0
+          "area_intersection_union": 170078.0
         }
       }
     },

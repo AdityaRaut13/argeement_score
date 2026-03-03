@@ -49,13 +49,13 @@
           "component_id": "Basal lymphoid aggregates:comp_1",
           "class": "Basal lymphoid aggregates",
           "nA": 1,
-          "nB": 3,
-          "cas_union": 0.8767508509287139,
-          "oc_union": 0.9306848430887406,
-          "ar_union": 1.9958572040018037,
+          "nB": 2,
+          "cas_union": 0.8501276941295466,
+          "oc_union": 0.922183707502833,
+          "ar_union": 2.240638482114638,
           "area_a_union": 3487984.0,
-          "area_b_union": 1747612.0,
-          "area_intersection_union": 1626476.0
+          "area_b_union": 1556692.0,
+          "area_intersection_union": 1435556.0
         }
       }
     },
@@ -280,72 +280,14 @@
           "status": "component_tp",
           "component_id": "Moderate to marked mononuclear cell infiltrate:comp_0",
           "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 2,
+          "nA": 1,
           "nB": 1,
-          "cas_union": 0.7905563560841161,
-          "oc_union": 0.7961736441218578,
-          "ar_union": 1.2687062531050926,
-          "area_a_union": 863144.0,
+          "cas_union": 0.8304368131915835,
+          "oc_union": 0.8408592439685202,
+          "ar_union": 1.3714641659140756,
+          "area_a_union": 496064.0,
           "area_b_union": 680334.0,
-          "area_intersection_union": 541664.0
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "c56f66dc-10b8-4ecb-a583-d8f321348988",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              21486.0,
-              26111.0
-            ],
-            [
-              22291.0,
-              26111.0
-            ],
-            [
-              22291.0,
-              26567.0
-            ],
-            [
-              21486.0,
-              26567.0
-            ],
-            [
-              21486.0,
-              26111.0
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "objectType": "annotation",
-        "classification": {
-          "name": "A | Moderate to marked mononuclear cell infiltrate",
-          "color": [
-            21,
-            11,
-            49
-          ]
-        },
-        "case_key": "2346175",
-        "source": "A",
-        "orig_class": "Moderate to marked mononuclear cell infiltrate",
-        "match": {
-          "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_0",
-          "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 2,
-          "nB": 1,
-          "cas_union": 0.7905563560841161,
-          "oc_union": 0.7961736441218578,
-          "ar_union": 1.2687062531050926,
-          "area_a_union": 863144.0,
-          "area_b_union": 680334.0,
-          "area_intersection_union": 541664.0
+          "area_intersection_union": 417120.0
         }
       }
     },
@@ -394,7 +336,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_4",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -452,7 +394,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_9",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_10",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -510,7 +452,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_16",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_17",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -626,7 +568,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_20",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_21",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -684,7 +626,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_24",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_25",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -922,13 +864,13 @@
           "component_id": "Basal lymphoid aggregates:comp_1",
           "class": "Basal lymphoid aggregates",
           "nA": 1,
-          "nB": 3,
-          "cas_union": 0.8767508509287139,
-          "oc_union": 0.9306848430887406,
-          "ar_union": 1.9958572040018037,
+          "nB": 2,
+          "cas_union": 0.8501276941295466,
+          "oc_union": 0.922183707502833,
+          "ar_union": 2.240638482114638,
           "area_a_union": 3487984.0,
-          "area_b_union": 1747612.0,
-          "area_intersection_union": 1626476.0
+          "area_b_union": 1556692.0,
+          "area_intersection_union": 1435556.0
         }
       }
     },
@@ -1040,13 +982,13 @@
           "component_id": "Basal lymphoid aggregates:comp_1",
           "class": "Basal lymphoid aggregates",
           "nA": 1,
-          "nB": 3,
-          "cas_union": 0.8767508509287139,
-          "oc_union": 0.9306848430887406,
-          "ar_union": 1.9958572040018037,
+          "nB": 2,
+          "cas_union": 0.8501276941295466,
+          "oc_union": 0.922183707502833,
+          "ar_union": 2.240638482114638,
           "area_a_union": 3487984.0,
-          "area_b_union": 1747612.0,
-          "area_intersection_union": 1626476.0
+          "area_b_union": 1556692.0,
+          "area_intersection_union": 1435556.0
         }
       }
     },
@@ -1170,65 +1112,6 @@
     },
     {
       "type": "Feature",
-      "id": "76923189-863a-44f6-8b25-a439a43238b4",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              26373.0,
-              31277.0
-            ],
-            [
-              26373.0,
-              31832.0
-            ],
-            [
-              26717.0,
-              31832.0
-            ],
-            [
-              26717.0,
-              31277.0
-            ],
-            [
-              26373.0,
-              31277.0
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "objectType": "annotation",
-        "classification": {
-          "name": "B | Basal lymphoid aggregates",
-          "color": [
-            0,
-            0,
-            255
-          ]
-        },
-        "isLocked": true,
-        "case_key": "2346175",
-        "source": "B",
-        "orig_class": "Basal lymphoid aggregates",
-        "match": {
-          "status": "component_tp",
-          "component_id": "Basal lymphoid aggregates:comp_1",
-          "class": "Basal lymphoid aggregates",
-          "nA": 1,
-          "nB": 3,
-          "cas_union": 0.8767508509287139,
-          "oc_union": 0.9306848430887406,
-          "ar_union": 1.9958572040018037,
-          "area_a_union": 3487984.0,
-          "area_b_union": 1747612.0,
-          "area_intersection_union": 1626476.0
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "9bbb87b6-3635-4f35-9f1a-3fd43902e785",
       "geometry": {
         "type": "Polygon",
@@ -1273,7 +1156,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_16",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_17",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1332,7 +1215,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_4",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1393,14 +1276,14 @@
           "status": "component_tp",
           "component_id": "Moderate to marked mononuclear cell infiltrate:comp_0",
           "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 2,
+          "nA": 1,
           "nB": 1,
-          "cas_union": 0.7905563560841161,
-          "oc_union": 0.7961736441218578,
-          "ar_union": 1.2687062531050926,
-          "area_a_union": 863144.0,
+          "cas_union": 0.8304368131915835,
+          "oc_union": 0.8408592439685202,
+          "ar_union": 1.3714641659140756,
+          "area_a_union": 496064.0,
           "area_b_union": 680334.0,
-          "area_intersection_union": 541664.0
+          "area_intersection_union": 417120.0
         }
       }
     },
@@ -1450,7 +1333,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_9",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_10",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1509,7 +1392,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_20",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_21",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,
@@ -1568,7 +1451,7 @@
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
           "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_24",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_25",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
           "nB": 1,

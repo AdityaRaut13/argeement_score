@@ -1,0 +1,6 @@
+case_key,class,mode,unit_id,status,nA,nB,a_uids,b_uids,a_feat_ids,b_feat_ids,a_src_files,b_src_files,cas,oc,ar,area_a,area_b,area_intersection
+S2402511,Basal lymphoid aggregates,union_per_class,UNION,union_mode,3,3,,,,,,,0.7766190906357909,0.9623451679886957,3.705163056773858,3786358.0,1021914.0,983434.0
+S2402511,Marked (>50%) crypt distortion,union_per_class,UNION,union_mode,3,3,,,,,,,0.8513254674654982,0.856373297449637,1.2429331181766012,63807488.0,51336220.0,43962968.0
+S2402511,Moderate to marked mononuclear cell infiltrate,union_per_class,UNION,union_mode,22,3,,,,,,,0.3748485814019879,0.48071835505205945,4.098824569445354,5007452.0,1221680.0,587284.0
+S2402511,No/ mild mononuclear cell infiltrate,union_per_class,UNION,union_mode,9,8,,,,,,,0.30321742857918044,0.37346732455147647,3.6369310780156825,994095.0,3615455.0,371262.0
+S2402511,Ulcer/ erosion,union_per_class,UNION,union_mode,4,6,,,,,,,0.2449400544405982,0.26903029955896673,2.3781070753520495,611065.0,1453178.0,164395.0

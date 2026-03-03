@@ -1,0 +1,14 @@
+{
+  "case_key": "S2402511",
+  "mode": "components",
+  "TP": 13,
+  "FP": 10,
+  "FN": 27,
+  "micro_precision": 0.5652173913043478,
+  "micro_recall": 0.325,
+  "micro_f1": 0.4126984126984127,
+  "macro_f1": 0.5630000000000001,
+  "cas_threshold": 0.35,
+  "sigma": 2.0,
+  "strtree_available": true
+}

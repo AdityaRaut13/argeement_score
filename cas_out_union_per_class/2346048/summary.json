@@ -1,0 +1,13 @@
+{
+  "case_key": "2346048",
+  "mode": "union_per_class",
+  "micro_precision": 0.38728884512930395,
+  "micro_recall": 0.32830282593729926,
+  "micro_f1": 0.35536473508817373,
+  "macro_f1": 0.39616822479943,
+  "total_area_a": 19519966.0,
+  "total_area_b": 16546978.0,
+  "total_area_intersection": 6408460.0,
+  "sigma": 2.0,
+  "strtree_available": true
+}

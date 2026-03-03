@@ -945,13 +945,7 @@
         "source": "A",
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
-          "status": "matched",
-          "pair_id": "Moderate to marked mononuclear cell infiltrate:pair_12",
-          "cas": 0.3148352026393455,
-          "oc": 0.3148628826530612,
-          "ar": 1.026875,
-          "other_source": "B",
-          "other_uid": "2224413|0:B:5ce9a4f7-2136-4c4f-a17c-7fa3535588c2"
+          "status": "unmatched"
         }
       }
     },
@@ -5908,13 +5902,7 @@
         "source": "B",
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
-          "status": "matched",
-          "pair_id": "Moderate to marked mononuclear cell infiltrate:pair_12",
-          "cas": 0.3148352026393455,
-          "oc": 0.3148628826530612,
-          "ar": 1.026875,
-          "other_source": "A",
-          "other_uid": "2224413|0:A:55c8db80-00e1-4dff-bcf8-9a3949bf3a94"
+          "status": "unmatched"
         }
       }
     }

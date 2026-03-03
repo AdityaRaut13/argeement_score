@@ -1,0 +1,14 @@
+{
+  "case_key": "2346048",
+  "mode": "components",
+  "TP": 4,
+  "FP": 5,
+  "FN": 7,
+  "micro_precision": 0.4444444444444444,
+  "micro_recall": 0.36363636363636365,
+  "micro_f1": 0.39999999999999997,
+  "macro_f1": 0.5535714285714286,
+  "cas_threshold": 0.35,
+  "sigma": 2.0,
+  "strtree_available": true
+}

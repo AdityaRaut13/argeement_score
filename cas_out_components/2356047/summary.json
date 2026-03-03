@@ -8,7 +8,7 @@
   "micro_recall": 0.0,
   "micro_f1": null,
   "macro_f1": null,
-  "cas_threshold": 0.3,
+  "cas_threshold": 0.35,
   "sigma": 2.0,
   "strtree_available": true
 }

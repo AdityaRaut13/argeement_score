@@ -351,64 +351,6 @@
     },
     {
       "type": "Feature",
-      "id": "55c8db80-00e1-4dff-bcf8-9a3949bf3a94",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              36950.0,
-              3500.0
-            ],
-            [
-              37510.0,
-              3500.0
-            ],
-            [
-              37510.0,
-              4060.0
-            ],
-            [
-              36950.0,
-              4060.0
-            ],
-            [
-              36950.0,
-              3500.0
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "objectType": "annotation",
-        "classification": {
-          "name": "A | Moderate to marked mononuclear cell infiltrate",
-          "color": [
-            21,
-            11,
-            49
-          ]
-        },
-        "case_key": "2224413",
-        "source": "A",
-        "orig_class": "Moderate to marked mononuclear cell infiltrate",
-        "match": {
-          "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
-          "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 1,
-          "nB": 1,
-          "cas_union": 0.3148352026393455,
-          "oc_union": 0.3148628826530612,
-          "ar_union": 1.026875,
-          "area_a_union": 313600.0,
-          "area_b_union": 322028.0,
-          "area_intersection_union": 98741.0
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "78c89473-8962-4bde-aeb8-11b845752bd5",
       "geometry": {
         "type": "Polygon",
@@ -2981,65 +2923,6 @@
           "area_a_union": 206080.0,
           "area_b_union": 453150.0,
           "area_intersection_union": 175780.0
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "5ce9a4f7-2136-4c4f-a17c-7fa3535588c2",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              36375.0,
-              3466.0
-            ],
-            [
-              36375.0,
-              3837.0
-            ],
-            [
-              37243.0,
-              3837.0
-            ],
-            [
-              37243.0,
-              3466.0
-            ],
-            [
-              36375.0,
-              3466.0
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "objectType": "annotation",
-        "classification": {
-          "name": "B | Moderate to marked mononuclear cell infiltrate",
-          "color": [
-            21,
-            11,
-            49
-          ]
-        },
-        "isLocked": true,
-        "case_key": "2224413",
-        "source": "B",
-        "orig_class": "Moderate to marked mononuclear cell infiltrate",
-        "match": {
-          "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
-          "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 1,
-          "nB": 1,
-          "cas_union": 0.3148352026393455,
-          "oc_union": 0.3148628826530612,
-          "ar_union": 1.026875,
-          "area_a_union": 313600.0,
-          "area_b_union": 322028.0,
-          "area_intersection_union": 98741.0
         }
       }
     }

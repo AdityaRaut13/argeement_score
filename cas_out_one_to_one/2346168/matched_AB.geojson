@@ -1,0 +1,441 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "47a81daf-68cc-4aa4-b40c-070eba67e317",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22489.0,
+              8195.0
+            ],
+            [
+              22867.0,
+              8195.0
+            ],
+            [
+              22867.0,
+              8469.0
+            ],
+            [
+              22489.0,
+              8469.0
+            ],
+            [
+              22489.0,
+              8195.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "A | No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+          "color": [
+            255,
+            0,
+            255
+          ]
+        },
+        "case_key": "2346168",
+        "source": "A",
+        "orig_class": "No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+        "match": {
+          "status": "matched",
+          "pair_id": "No ulcer/ mild activity (occasional neutrophils in LM or epithe):pair_0",
+          "cas": 0.733849109878035,
+          "oc": 1.0,
+          "ar": 4.823060286563936,
+          "other_source": "B",
+          "other_uid": "2346168|0:B:5c01c424-ac80-43f4-aaa4-3bbc491b3a6c"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ab615692-e2fe-4cec-8d52-c7d80220965f",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20960.0,
+              7278.0
+            ],
+            [
+              21120.0,
+              7278.0
+            ],
+            [
+              21120.0,
+              7392.0
+            ],
+            [
+              20960.0,
+              7392.0
+            ],
+            [
+              20960.0,
+              7278.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "A | No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+          "color": [
+            255,
+            0,
+            255
+          ]
+        },
+        "case_key": "2346168",
+        "source": "A",
+        "orig_class": "No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+        "match": {
+          "status": "matched",
+          "pair_id": "No ulcer/ mild activity (occasional neutrophils in LM or epithe):pair_1",
+          "cas": 0.6308438763171889,
+          "oc": 0.7543859649122807,
+          "ar": 3.30734649122807,
+          "other_source": "B",
+          "other_uid": "2346168|0:B:f312f414-2ea3-4174-aef0-56e85ff133db"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "2f2a01a7-137c-4ee1-aeec-3365c9c0ec85",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14605.0,
+              8028.0
+            ],
+            [
+              16340.0,
+              8028.0
+            ],
+            [
+              16340.0,
+              9366.0
+            ],
+            [
+              14605.0,
+              9366.0
+            ],
+            [
+              14605.0,
+              8028.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "A | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "case_key": "2346168",
+        "source": "A",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "matched",
+          "pair_id": "Basal lymphoid aggregates:pair_0",
+          "cas": 0.4844227686104956,
+          "oc": 0.9323144104803494,
+          "ar": 9.861137070327766,
+          "other_source": "B",
+          "other_uid": "2346168|0:B:ca069f16-bef0-44cd-bc1d-9bdc3a5a105a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eccee924-cb82-4013-a0b4-e0e2b98ce7c2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10887.0,
+              5754.0
+            ],
+            [
+              13698.0,
+              5754.0
+            ],
+            [
+              13698.0,
+              9280.0
+            ],
+            [
+              10887.0,
+              9280.0
+            ],
+            [
+              10887.0,
+              5754.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "A | Architecture normal",
+          "color": [
+            0,
+            255,
+            255
+          ]
+        },
+        "case_key": "2346168",
+        "source": "A",
+        "orig_class": "Architecture normal",
+        "match": {
+          "status": "matched",
+          "pair_id": "Architecture normal:pair_0",
+          "cas": 0.7287730621290394,
+          "oc": 1.0,
+          "ar": 4.908442503550895,
+          "other_source": "B",
+          "other_uid": "2346168|0:B:69707a71-d607-45e1-b1e2-f936889f8d19"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ca069f16-bef0-44cd-bc1d-9bdc3a5a105a",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14703.0,
+              7997.0
+            ],
+            [
+              14703.0,
+              8455.0
+            ],
+            [
+              15217.0,
+              8455.0
+            ],
+            [
+              15217.0,
+              7997.0
+            ],
+            [
+              14703.0,
+              7997.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2346168",
+        "source": "B",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "matched",
+          "pair_id": "Basal lymphoid aggregates:pair_0",
+          "cas": 0.4844227686104956,
+          "oc": 0.9323144104803494,
+          "ar": 9.861137070327766,
+          "other_source": "A",
+          "other_uid": "2346168|0:A:2f2a01a7-137c-4ee1-aeec-3365c9c0ec85"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f312f414-2ea3-4174-aef0-56e85ff133db",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20915.0,
+              7306.0
+            ],
+            [
+              20915.0,
+              7584.0
+            ],
+            [
+              21132.0,
+              7584.0
+            ],
+            [
+              21132.0,
+              7306.0
+            ],
+            [
+              20915.0,
+              7306.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+          "color": [
+            255,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2346168",
+        "source": "B",
+        "orig_class": "No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+        "match": {
+          "status": "matched",
+          "pair_id": "No ulcer/ mild activity (occasional neutrophils in LM or epithe):pair_1",
+          "cas": 0.6308438763171889,
+          "oc": 0.7543859649122807,
+          "ar": 3.30734649122807,
+          "other_source": "A",
+          "other_uid": "2346168|0:A:ab615692-e2fe-4cec-8d52-c7d80220965f"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "5c01c424-ac80-43f4-aaa4-3bbc491b3a6c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21990.0,
+              8146.0
+            ],
+            [
+              21990.0,
+              8580.0
+            ],
+            [
+              23141.0,
+              8580.0
+            ],
+            [
+              23141.0,
+              8146.0
+            ],
+            [
+              21990.0,
+              8146.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+          "color": [
+            255,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2346168",
+        "source": "B",
+        "orig_class": "No ulcer/ mild activity (occasional neutrophils in LM or epithe)",
+        "match": {
+          "status": "matched",
+          "pair_id": "No ulcer/ mild activity (occasional neutrophils in LM or epithe):pair_0",
+          "cas": 0.733849109878035,
+          "oc": 1.0,
+          "ar": 4.823060286563936,
+          "other_source": "A",
+          "other_uid": "2346168|0:A:47a81daf-68cc-4aa4-b40c-070eba67e317"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "69707a71-d607-45e1-b1e2-f936889f8d19",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9639.0,
+              5689.0
+            ],
+            [
+              9639.0,
+              11859.0
+            ],
+            [
+              17524.0,
+              11859.0
+            ],
+            [
+              17524.0,
+              5689.0
+            ],
+            [
+              9639.0,
+              5689.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Architecture normal",
+          "color": [
+            0,
+            255,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2346168",
+        "source": "B",
+        "orig_class": "Architecture normal",
+        "match": {
+          "status": "matched",
+          "pair_id": "Architecture normal:pair_0",
+          "cas": 0.7287730621290394,
+          "oc": 1.0,
+          "ar": 4.908442503550895,
+          "other_source": "A",
+          "other_uid": "2346168|0:A:eccee924-cb82-4013-a0b4-e0e2b98ce7c2"
+        }
+      }
+    }
+  ]
+}

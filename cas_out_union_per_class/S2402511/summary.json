@@ -1,0 +1,13 @@
+{
+  "case_key": "S2402511",
+  "mode": "union_per_class",
+  "micro_precision": 0.7855168441203567,
+  "micro_recall": 0.6208265997549701,
+  "micro_f1": 0.6935286732544802,
+  "macro_f1": 0.3363202717381806,
+  "total_area_a": 74206458.0,
+  "total_area_b": 58648447.0,
+  "total_area_intersection": 46069343.0,
+  "sigma": 2.0,
+  "strtree_available": true
+}

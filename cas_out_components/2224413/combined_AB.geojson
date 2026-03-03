@@ -1089,17 +1089,17 @@
         "source": "A",
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
-          "status": "component_tp",
+          "status": "component_fn",
           "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
           "class": "Moderate to marked mononuclear cell infiltrate",
           "nA": 1,
-          "nB": 1,
-          "cas_union": 0.3148352026393455,
-          "oc_union": 0.3148628826530612,
-          "ar_union": 1.026875,
+          "nB": 0,
+          "cas_union": 0.0,
+          "oc_union": 0.0,
+          "ar_union": Infinity,
           "area_a_union": 313600.0,
-          "area_b_union": 322028.0,
-          "area_intersection_union": 98741.0
+          "area_b_union": 0.0,
+          "area_intersection_union": 0.0
         }
       }
     },
@@ -6764,17 +6764,17 @@
         "source": "B",
         "orig_class": "Moderate to marked mononuclear cell infiltrate",
         "match": {
-          "status": "component_tp",
-          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_5",
+          "status": "component_fp",
+          "component_id": "Moderate to marked mononuclear cell infiltrate:comp_46",
           "class": "Moderate to marked mononuclear cell infiltrate",
-          "nA": 1,
+          "nA": 0,
           "nB": 1,
-          "cas_union": 0.3148352026393455,
-          "oc_union": 0.3148628826530612,
-          "ar_union": 1.026875,
-          "area_a_union": 313600.0,
+          "cas_union": 0.0,
+          "oc_union": 0.0,
+          "ar_union": Infinity,
+          "area_a_union": 0.0,
           "area_b_union": 322028.0,
-          "area_intersection_union": 98741.0
+          "area_intersection_union": 0.0
         }
       }
     }

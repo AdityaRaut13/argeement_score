@@ -8,7 +8,7 @@
   "micro_recall": 0.14634146341463414,
   "micro_f1": 0.19512195121951217,
   "macro_f1": 0.5347152847152847,
-  "cas_threshold": 0.3,
+  "cas_threshold": 0.35,
   "sigma": 2.0,
   "matching": "greedy",
   "hungarian_available": false,

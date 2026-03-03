@@ -1,8 +1,8 @@
-matched_cases: 6
+matched_cases: 11
 mode: components
-total_TP: 106
-total_FP: 153
-total_FN: 286
-micro_precision: 0.409266
-micro_recall: 0.270408
-micro_f1: 0.325653
+total_TP: 146
+total_FP: 271
+total_FN: 413
+micro_precision: 0.350120
+micro_recall: 0.261181
+micro_f1: 0.299180
