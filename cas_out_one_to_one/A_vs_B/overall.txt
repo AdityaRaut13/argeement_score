@@ -1,0 +1,12 @@
+matched_cases: 11
+mode: one_to_one
+left_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\AIIMSD_all_annotations\AIIMSD_all_annotations\Annotated\EQAS_1_Annotations
+right_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\AIIMS_G\AIIMS_G\Annotated
+left_source_label: A
+right_source_label: B
+total_TP: 147
+total_FP: 277
+total_FN: 420
+micro_precision: 0.346698
+micro_recall: 0.259259
+micro_f1: 0.296670

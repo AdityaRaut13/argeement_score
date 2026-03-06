@@ -1,0 +1,20 @@
+{
+  "case_key": "2346045_2",
+  "left_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\AIIMS_G\\AIIMS_G\\Annotated",
+  "right_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\DMC\\DMC",
+  "left_source_label": "B",
+  "right_source_label": "C",
+  "mode": "one_to_one",
+  "TP": 0,
+  "FP": 19,
+  "FN": 34,
+  "micro_precision": 0.0,
+  "micro_recall": 0.0,
+  "micro_f1": null,
+  "macro_f1": null,
+  "cas_threshold": 0.35,
+  "sigma": 2.0,
+  "matching": "greedy",
+  "hungarian_available": false,
+  "strtree_available": true
+}

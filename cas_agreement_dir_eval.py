@@ -2,7 +2,12 @@
 """
 Directory-wise GeoJSON inter-annotator agreement evaluation using CAS (no confidence scores).
 
-This script supports three evaluation modes:
+This script supports either:
+1) two-directory evaluation (original behavior), or
+2) three-directory evaluation with all three pairwise comparisons:
+   A vs B, A vs C, and B vs C.
+
+For each pair, the script supports three evaluation modes:
 
 1) one_to_one (default)
    - Per class: compute CAS(P,G) for all pairs, do 1-1 matching (greedy or Hungarian),
@@ -14,36 +19,22 @@ This script supports three evaluation modes:
    - Also reports union-level CAS/OC/AR as diagnostics.
 
 3) components (split/merge robust, count-based, no 1-1)
-   - Per class: build a bipartite graph between A-instances and B-instances with edges
-     whenever CAS >= tau. Connected components represent merge/split groups.
+   - Per class: build a bipartite graph between instances from the two compared roots,
+     with edges whenever CAS >= tau. Connected components represent merge/split groups.
    - A component is counted as:
-        TP if it contains at least one A and one B instance,
-        FN if it contains only A instances,
-        FP if it contains only B instances.
-   - Each component is also scored by CAS/OC/AR between the unions of A- and B-geometry
-     inside the component (reported as a quality diagnostic).
-   - This avoids the "one big box vs many small boxes" failure of 1-1 matching, while
-     still providing TP/FP/FN-style counts.
+        TP if it contains at least one instance from each side,
+        FN if it contains only left-side instances,
+        FP if it contains only right-side instances.
 
-Folder matching:
+Folder matching for each compared pair:
 - Recursively finds all *.geojson under each root.
-- Groups by relative parent directory (relative to root).
+- Groups by relative parent directory (relative to the root).
 - For each key present in both roots, evaluates that folder pair.
 
-Optional exports per matched folder:
-- combined_AB.geojson (both sources with source-tagged labels + match metadata)
-- matched_AB.geojson (one_to_one: matched pairs; components: TP-components only; union: not written)
-
-Outputs per matched folder:
-- per_class_metrics.csv
-- summary.json
-- matches.csv
-- combined_AB.geojson (optional)
-- matched_AB.geojson (optional; depends on mode)
-
-Global outputs:
-- cases_summary.csv
-- overall.txt
+Outputs:
+- For each pairwise comparison, a separate output subfolder is created.
+- Inside each pair subfolder, the per-case and global outputs are the same as before.
+- If three roots are provided, an additional pairwise_overview.csv is written at the top level.
 """
 
 from __future__ import annotations
@@ -288,6 +279,15 @@ def safe_rel_key_to_dir(key: str) -> Path:
     return Path(key)
 
 
+def sanitize_label(label: str) -> str:
+    cleaned = "".join(ch if ch.isalnum() or ch in ("-", "_", ".") else "_" for ch in label.strip())
+    return cleaned or "root"
+
+
+def make_pair_name(left_label: str, right_label: str) -> str:
+    return f"{sanitize_label(left_label)}_vs_{sanitize_label(right_label)}"
+
+
 # -----------------------------
 # one_to_one matching
 # -----------------------------
@@ -485,13 +485,13 @@ def compute_per_class_metrics_one_to_one(
                 "status": "matched",
                 "pair_id": pair_id,
                 "cas": float(s), "oc": float(oc), "ar": float(ar),
-                "other_source": "B", "other_uid": b.uid,
+                "other_source": b.source, "other_uid": b.uid,
             }
             match_map[b.uid] = {
                 "status": "matched",
                 "pair_id": pair_id,
                 "cas": float(s), "oc": float(oc), "ar": float(ar),
-                "other_source": "A", "other_uid": a.uid,
+                "other_source": a.source, "other_uid": a.uid,
             }
 
         tot_tp += tp
@@ -1006,115 +1006,119 @@ def write_per_class_csv(out_path: Path, rows: List[Dict[str, Any]]) -> None:
 # -----------------------------
 # Main
 # -----------------------------
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--a_root", required=True, help="Root folder for annotator A (reference)")
-    ap.add_argument("--b_root", required=True, help="Root folder for annotator B (compared)")
-    ap.add_argument("--out", default="cas_agreement_out", help="Output folder")
-
-    ap.add_argument("--mode", choices=["one_to_one", "union_per_class", "components"], default="one_to_one",
-                    help="Evaluation mode.")
-    ap.add_argument("--cas_thr", type=float, default=0.5,
-                    help="CAS threshold for linking/matching (used in one_to_one and components).")
-    ap.add_argument("--sigma", type=float, default=1.0,
-                    help="Size-mismatch tolerance (default 1.0). Use inf to disable penalty (CAS==OC).")
-
-    ap.add_argument("--matching", choices=["greedy", "hungarian"], default="greedy",
-                    help="1-1 matching algorithm (used only in one_to_one).")
-    ap.add_argument("--hungarian_max_n", type=int, default=600,
-                    help="Enable Hungarian only if nA+nB <= this (one_to_one).")
-
-    ap.add_argument("--classes", type=str, default="",
-                    help="Comma-separated class names to keep (optional)")
-    ap.add_argument("--write_geojson", action="store_true",
-                    help="Write combined_AB.geojson and (when meaningful) matched_AB.geojson")
-    args = ap.parse_args()
-
-    a_root = Path(args.a_root).expanduser().resolve()
-    b_root = Path(args.b_root).expanduser().resolve()
-    out_dir = Path(args.out).expanduser().resolve()
+def run_pair_evaluation(
+    left_root: Path,
+    right_root: Path,
+    out_dir: Path,
+    mode: str,
+    cas_thr: float,
+    sigma: float,
+    matching: str,
+    hungarian_max_n: int,
+    keep_classes: Optional[set[str]],
+    write_geojson: bool,
+    left_source_label: str,
+    right_source_label: str,
+) -> Dict[str, Any]:
+    left_root = left_root.expanduser().resolve()
+    right_root = right_root.expanduser().resolve()
+    out_dir = out_dir.expanduser().resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    keep_classes = None
-    if args.classes.strip():
-        keep_classes = {c.strip() for c in args.classes.split(",") if c.strip()}
+    left_groups = collect_geojson_by_rel_parent(left_root)
+    right_groups = collect_geojson_by_rel_parent(right_root)
 
-    sigma = float(args.sigma)  # argparse accepts "inf" -> float('inf')
-
-    A_groups = collect_geojson_by_rel_parent(a_root)
-    B_groups = collect_geojson_by_rel_parent(b_root)
-
-    common_keys = sorted(set(A_groups.keys()) & set(B_groups.keys()))
+    common_keys = sorted(set(left_groups.keys()) & set(right_groups.keys()))
     if not common_keys:
         raise SystemExit(
-            "No matching folders (relative parent dirs of *.geojson) found between A_root and B_root.\n"
+            f"No matching folders (relative parent dirs of *.geojson) found between {left_root} and {right_root}.\n"
             "Tip: ensure both roots contain geojson under matching relative folder paths."
         )
 
     global_rows: List[Dict[str, Any]] = []
-
-    # Global aggregation
     total_TP = total_FP = total_FN = 0
     total_area_a = total_area_b = total_area_i = 0.0
 
-    for key in tqdm(common_keys, desc="Matched folders"):
+    for key in tqdm(common_keys, desc=f"Matched folders [{left_source_label} vs {right_source_label}]"):
         case_out = out_dir / safe_rel_key_to_dir(key)
         case_out.mkdir(parents=True, exist_ok=True)
 
-        # Load all anns for this folder-key (across all geojson files in that folder)
-        A_anns: List[Ann] = []
-        for idx, p in enumerate(sorted(A_groups[key])):
-            A_anns.extend(load_qupath_geojson(p, source="A", uid_prefix=f"{key}|{idx}", keep_classes=keep_classes))
-
-        B_anns: List[Ann] = []
-        for idx, p in enumerate(sorted(B_groups[key])):
-            B_anns.extend(load_qupath_geojson(p, source="B", uid_prefix=f"{key}|{idx}", keep_classes=keep_classes))
-
-        # Compute metrics according to mode
-        if args.mode == "union_per_class":
-            rows, summary, match_rows, match_map = compute_per_class_metrics_union(
-                case_key=key, A=A_anns, B=B_anns, sigma=sigma
+        left_anns: List[Ann] = []
+        for idx, p in enumerate(sorted(left_groups[key])):
+            left_anns.extend(
+                load_qupath_geojson(
+                    p,
+                    source=left_source_label,
+                    uid_prefix=f"{key}|{idx}",
+                    keep_classes=keep_classes,
+                )
             )
-        elif args.mode == "components":
+
+        right_anns: List[Ann] = []
+        for idx, p in enumerate(sorted(right_groups[key])):
+            right_anns.extend(
+                load_qupath_geojson(
+                    p,
+                    source=right_source_label,
+                    uid_prefix=f"{key}|{idx}",
+                    keep_classes=keep_classes,
+                )
+            )
+
+        if mode == "union_per_class":
+            rows, summary, match_rows, match_map = compute_per_class_metrics_union(
+                case_key=key, A=left_anns, B=right_anns, sigma=sigma
+            )
+        elif mode == "components":
             rows, summary, match_rows, match_map = compute_per_class_metrics_components(
-                case_key=key, A=A_anns, B=B_anns, cas_thr=float(args.cas_thr), sigma=sigma
+                case_key=key, A=left_anns, B=right_anns, cas_thr=cas_thr, sigma=sigma
             )
         else:
             rows, summary, match_rows, match_map = compute_per_class_metrics_one_to_one(
-                case_key=key, A=A_anns, B=B_anns,
-                cas_thr=float(args.cas_thr),
+                case_key=key,
+                A=left_anns,
+                B=right_anns,
+                cas_thr=cas_thr,
                 sigma=sigma,
-                matching=args.matching,
-                hungarian_max_n=int(args.hungarian_max_n),
+                matching=matching,
+                hungarian_max_n=hungarian_max_n,
             )
 
-        # Save per-case outputs
         write_per_class_csv(case_out / "per_class_metrics.csv", rows)
-        (case_out / "summary.json").write_text(json.dumps({"case_key": key, **summary}, indent=2), encoding="utf-8")
+        (case_out / "summary.json").write_text(
+            json.dumps(
+                {
+                    "case_key": key,
+                    "left_root": str(left_root),
+                    "right_root": str(right_root),
+                    "left_source_label": left_source_label,
+                    "right_source_label": right_source_label,
+                    **summary,
+                },
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
         write_matches_csv(case_out / "matches.csv", match_rows)
 
-        # Optional GeoJSON export
-        if args.write_geojson:
-            all_anns = A_anns + B_anns
+        if write_geojson:
+            all_anns = left_anns + right_anns
             write_combined_geojson(case_out / "combined_AB.geojson", all_anns, match_map, case_key=key)
 
-            # matched_AB.geojson depends on mode
-            if args.mode == "one_to_one":
-                # keep only features that appear in match_map with status matched
+            if mode == "one_to_one":
                 matched_anns = [a for a in all_anns if match_map.get(a.uid, {}).get("status") == "matched"]
                 write_combined_geojson(case_out / "matched_AB.geojson", matched_anns, match_map, case_key=key)
-            elif args.mode == "components":
-                # keep only TP-components (component_tp)
+            elif mode == "components":
                 matched_anns = [a for a in all_anns if match_map.get(a.uid, {}).get("status") == "component_tp"]
                 write_combined_geojson(case_out / "matched_AB.geojson", matched_anns, match_map, case_key=key)
-            # union_per_class: matched_AB is not meaningful
 
-        # Global row
         row = {
             "case_key": key,
-            "mode": args.mode,
-            "n_a": len(A_anns),
-            "n_b": len(B_anns),
+            "mode": mode,
+            "left_source_label": left_source_label,
+            "right_source_label": right_source_label,
+            "n_left": len(left_anns),
+            "n_right": len(right_anns),
             "micro_precision": summary.get("micro_precision"),
             "micro_recall": summary.get("micro_recall"),
             "micro_f1": summary.get("micro_f1"),
@@ -1122,7 +1126,7 @@ def main():
             "sigma": summary.get("sigma", (float(sigma) if math.isfinite(sigma) else "inf")),
         }
 
-        if args.mode in ("one_to_one", "components"):
+        if mode in ("one_to_one", "components"):
             row.update({
                 "TP": summary.get("TP"),
                 "FP": summary.get("FP"),
@@ -1147,7 +1151,6 @@ def main():
 
         global_rows.append(row)
 
-    # Write global summary CSV
     global_csv = out_dir / "cases_summary.csv"
     fieldnames = list(global_rows[0].keys()) if global_rows else []
     with open(global_csv, "w", newline="", encoding="utf-8") as f:
@@ -1156,14 +1159,17 @@ def main():
         for r in global_rows:
             w.writerow(r)
 
-    # Overall.txt
-    if args.mode in ("one_to_one", "components"):
+    if mode in ("one_to_one", "components"):
         micro_p = total_TP / (total_TP + total_FP) if (total_TP + total_FP) else 0.0
         micro_r = total_TP / (total_TP + total_FN) if (total_TP + total_FN) else 0.0
         micro_f1 = (2 * micro_p * micro_r / (micro_p + micro_r)) if (micro_p + micro_r) else 0.0
         overall_txt = (
             f"matched_cases: {len(global_rows)}\n"
-            f"mode: {args.mode}\n"
+            f"mode: {mode}\n"
+            f"left_root: {left_root}\n"
+            f"right_root: {right_root}\n"
+            f"left_source_label: {left_source_label}\n"
+            f"right_source_label: {right_source_label}\n"
             f"total_TP: {total_TP}\n"
             f"total_FP: {total_FP}\n"
             f"total_FN: {total_FN}\n"
@@ -1178,6 +1184,10 @@ def main():
         overall_txt = (
             f"matched_cases: {len(global_rows)}\n"
             f"mode: union_per_class\n"
+            f"left_root: {left_root}\n"
+            f"right_root: {right_root}\n"
+            f"left_source_label: {left_source_label}\n"
+            f"right_source_label: {right_source_label}\n"
             f"total_area_a: {total_area_a}\n"
             f"total_area_b: {total_area_b}\n"
             f"total_area_intersection: {total_area_i}\n"
@@ -1187,6 +1197,111 @@ def main():
         )
 
     (out_dir / "overall.txt").write_text(overall_txt, encoding="utf-8")
+
+    return {
+        "pair_name": out_dir.name,
+        "left_root": str(left_root),
+        "right_root": str(right_root),
+        "left_source_label": left_source_label,
+        "right_source_label": right_source_label,
+        "mode": mode,
+        "matched_cases": len(global_rows),
+        "micro_precision": micro_p,
+        "micro_recall": micro_r,
+        "micro_f1": micro_f1,
+        "output_dir": str(out_dir),
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--a_root", required=True, help="Root folder for annotator A (reference in A-vs-* pairs)")
+    ap.add_argument("--b_root", required=True, help="Root folder for annotator B")
+    ap.add_argument("--c_root", default="", help="Optional third root. If provided, all three pairwise comparisons are run.")
+    ap.add_argument("--out", default="cas_agreement_out", help="Output folder")
+
+    ap.add_argument("--a_label", default="A", help="Display/source label for the first root")
+    ap.add_argument("--b_label", default="B", help="Display/source label for the second root")
+    ap.add_argument("--c_label", default="C", help="Display/source label for the optional third root")
+
+    ap.add_argument("--mode", choices=["one_to_one", "union_per_class", "components"], default="one_to_one",
+                    help="Evaluation mode.")
+    ap.add_argument("--cas_thr", type=float, default=0.5,
+                    help="CAS threshold for linking/matching (used in one_to_one and components).")
+    ap.add_argument("--sigma", type=float, default=1.0,
+                    help="Size-mismatch tolerance (default 1.0). Use inf to disable penalty (CAS==OC).")
+
+    ap.add_argument("--matching", choices=["greedy", "hungarian"], default="greedy",
+                    help="1-1 matching algorithm (used only in one_to_one).")
+    ap.add_argument("--hungarian_max_n", type=int, default=600,
+                    help="Enable Hungarian only if nA+nB <= this (one_to_one).")
+
+    ap.add_argument("--classes", type=str, default="",
+                    help="Comma-separated class names to keep (optional)")
+    ap.add_argument("--write_geojson", action="store_true",
+                    help="Write combined_AB.geojson and (when meaningful) matched_AB.geojson")
+    args = ap.parse_args()
+
+    out_dir = Path(args.out).expanduser().resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    keep_classes = None
+    if args.classes.strip():
+        keep_classes = {c.strip() for c in args.classes.split(",") if c.strip()}
+
+    sigma = float(args.sigma)
+
+    comparisons = [
+        (Path(args.a_root), Path(args.b_root), args.a_label, args.b_label),
+    ]
+    if args.c_root.strip():
+        c_root = Path(args.c_root)
+        comparisons.extend([
+            (Path(args.a_root), c_root, args.a_label, args.c_label),
+            (Path(args.b_root), c_root, args.b_label, args.c_label),
+        ])
+
+    pair_summaries: List[Dict[str, Any]] = []
+    for left_root, right_root, left_label, right_label in comparisons:
+        pair_name = make_pair_name(left_label, right_label)
+        pair_out_dir = out_dir / pair_name if len(comparisons) > 1 else out_dir
+        summary = run_pair_evaluation(
+            left_root=left_root,
+            right_root=right_root,
+            out_dir=pair_out_dir,
+            mode=args.mode,
+            cas_thr=float(args.cas_thr),
+            sigma=sigma,
+            matching=args.matching,
+            hungarian_max_n=int(args.hungarian_max_n),
+            keep_classes=keep_classes,
+            write_geojson=bool(args.write_geojson),
+            left_source_label=left_label,
+            right_source_label=right_label,
+        )
+        pair_summaries.append(summary)
+
+    if len(pair_summaries) > 1:
+        overview_csv = out_dir / "pairwise_overview.csv"
+        fieldnames = [
+            "pair_name",
+            "left_source_label",
+            "right_source_label",
+            "left_root",
+            "right_root",
+            "mode",
+            "matched_cases",
+            "micro_precision",
+            "micro_recall",
+            "micro_f1",
+            "output_dir",
+        ]
+        with open(overview_csv, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=fieldnames)
+            w.writeheader()
+            for row in pair_summaries:
+                w.writerow({k: row.get(k, "") for k in fieldnames})
+
     print(f"Done. Outputs written to: {out_dir}")
 
 

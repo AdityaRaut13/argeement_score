@@ -1,0 +1,2357 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "6c5cb84e-1e35-4b2d-b637-bd97962da2fa",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7917.0,
+              4156.0
+            ],
+            [
+              7917.0,
+              4929.0
+            ],
+            [
+              8663.0,
+              4929.0
+            ],
+            [
+              8663.0,
+              4156.0
+            ],
+            [
+              7917.0,
+              4156.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "68e4ea46-faa0-4ce3-aa7f-6de0b39d0eea",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5366.0,
+              3156.0
+            ],
+            [
+              5366.0,
+              3517.0
+            ],
+            [
+              5966.0,
+              3517.0
+            ],
+            [
+              5966.0,
+              3156.0
+            ],
+            [
+              5366.0,
+              3156.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "18557ff3-7cb6-4b0b-b608-871a1d092e6c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6519.0,
+              3279.0
+            ],
+            [
+              6519.0,
+              3572.0
+            ],
+            [
+              7196.0,
+              3572.0
+            ],
+            [
+              7196.0,
+              3279.0
+            ],
+            [
+              6519.0,
+              3279.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a78ee9ef-711d-41a4-ac9d-b238adb1ad9a",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7745.0,
+              8203.0
+            ],
+            [
+              7745.0,
+              8669.0
+            ],
+            [
+              8716.0,
+              8669.0
+            ],
+            [
+              8716.0,
+              8203.0
+            ],
+            [
+              7745.0,
+              8203.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "4c67277f-60d1-43cb-831d-286d3d0e8560",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6614.0,
+              7570.0
+            ],
+            [
+              6614.0,
+              8231.0
+            ],
+            [
+              6956.0,
+              8231.0
+            ],
+            [
+              6956.0,
+              7570.0
+            ],
+            [
+              6614.0,
+              7570.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "0f2c00d0-3066-4b91-b6ef-90ac3ad792f8",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16275.0,
+              6507.0
+            ],
+            [
+              16275.0,
+              7835.0
+            ],
+            [
+              16722.0,
+              7835.0
+            ],
+            [
+              16722.0,
+              6507.0
+            ],
+            [
+              16275.0,
+              6507.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Ulcer/ erosion",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Ulcer/ erosion",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosion",
+          "area_a": 2263783.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "9f338a64-aec8-4308-90ad-5c6c6a225905",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12444.0,
+              7158.0
+            ],
+            [
+              12444.0,
+              7528.0
+            ],
+            [
+              12897.0,
+              7528.0
+            ],
+            [
+              12897.0,
+              7158.0
+            ],
+            [
+              12444.0,
+              7158.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal Plasmacytosis",
+          "color": [
+            202,
+            65,
+            86
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal Plasmacytosis",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal Plasmacytosis",
+          "area_a": 552258.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7244b263-f78b-41cb-8354-d691cf22f6c4",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13592.0,
+              7267.0
+            ],
+            [
+              13592.0,
+              7512.0
+            ],
+            [
+              13994.0,
+              7512.0
+            ],
+            [
+              13994.0,
+              7267.0
+            ],
+            [
+              13592.0,
+              7267.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal Plasmacytosis",
+          "color": [
+            202,
+            65,
+            86
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal Plasmacytosis",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal Plasmacytosis",
+          "area_a": 552258.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "456abda1-cceb-4125-bf66-c2a4bbcb427d",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6876.0,
+              8892.0
+            ],
+            [
+              6876.0,
+              9374.0
+            ],
+            [
+              7708.0,
+              9374.0
+            ],
+            [
+              7708.0,
+              8892.0
+            ],
+            [
+              6876.0,
+              8892.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal lymphoid aggregates",
+          "area_a": 662096.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ce44cd6b-c97f-47ea-bfee-a401d724845d",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11380.0,
+              6069.0
+            ],
+            [
+              11380.0,
+              6587.0
+            ],
+            [
+              11884.0,
+              6587.0
+            ],
+            [
+              11884.0,
+              6069.0
+            ],
+            [
+              11380.0,
+              6069.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal lymphoid aggregates",
+          "area_a": 662096.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dfc6faf3-b025-4ce0-bcc0-604041530cfc",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5614.0,
+              14434.0
+            ],
+            [
+              5614.0,
+              14938.0
+            ],
+            [
+              6519.0,
+              14938.0
+            ],
+            [
+              6519.0,
+              14434.0
+            ],
+            [
+              5614.0,
+              14434.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a4e8ab98-d9d0-4bf7-80e6-53257dc400d7",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10199.0,
+              8034.0
+            ],
+            [
+              10199.0,
+              8697.0
+            ],
+            [
+              11296.0,
+              8697.0
+            ],
+            [
+              11296.0,
+              8034.0
+            ],
+            [
+              10199.0,
+              8034.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "197695c5-d2b5-46ec-b0de-8c9a9b56f3bc",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11410.0,
+              7634.0
+            ],
+            [
+              11410.0,
+              8395.0
+            ],
+            [
+              12295.0,
+              8395.0
+            ],
+            [
+              12295.0,
+              7634.0
+            ],
+            [
+              11410.0,
+              7634.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "2f3447e4-8203-43f3-a6df-ca92c9a877ed",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14676.0,
+              7743.0
+            ],
+            [
+              14676.0,
+              8242.0
+            ],
+            [
+              15670.0,
+              8242.0
+            ],
+            [
+              15670.0,
+              7743.0
+            ],
+            [
+              14676.0,
+              7743.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "e053857e-86e0-4e1f-8d59-509d1a5de0e5",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11500.0,
+              6735.0
+            ],
+            [
+              11500.0,
+              7647.0
+            ],
+            [
+              12714.0,
+              7647.0
+            ],
+            [
+              12714.0,
+              6735.0
+            ],
+            [
+              11500.0,
+              6735.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bea09bb7-dfbd-4ca9-ac66-08e671784d79",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13262.0,
+              8051.0
+            ],
+            [
+              13262.0,
+              9149.0
+            ],
+            [
+              14310.0,
+              9149.0
+            ],
+            [
+              14310.0,
+              8051.0
+            ],
+            [
+              13262.0,
+              8051.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "012fc089-77bd-491e-aff6-3bb3db40edf7",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9523.0,
+              11801.0
+            ],
+            [
+              9523.0,
+              12376.0
+            ],
+            [
+              10319.0,
+              12376.0
+            ],
+            [
+              10319.0,
+              11801.0
+            ],
+            [
+              9523.0,
+              11801.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "53dbc26a-6240-4132-b8fd-6d1edcd360e3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4860.0,
+              7810.0
+            ],
+            [
+              4860.0,
+              9604.0
+            ],
+            [
+              6754.0,
+              9604.0
+            ],
+            [
+              6754.0,
+              7810.0
+            ],
+            [
+              4860.0,
+              7810.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "e12aa89d-2617-475c-ae19-cced2d8a7760",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10148.0,
+              6610.0
+            ],
+            [
+              10148.0,
+              7714.0
+            ],
+            [
+              11003.0,
+              7714.0
+            ],
+            [
+              11003.0,
+              6610.0
+            ],
+            [
+              10148.0,
+              6610.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "33a2550e-8b84-49f9-8b36-7791070132fa",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14108.0,
+              6599.0
+            ],
+            [
+              14108.0,
+              7323.0
+            ],
+            [
+              15053.0,
+              7323.0
+            ],
+            [
+              15053.0,
+              6599.0
+            ],
+            [
+              14108.0,
+              6599.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21a7787e-f64f-460f-9126-ffed79baec28",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5570.0,
+              3824.0
+            ],
+            [
+              5570.0,
+              4549.0
+            ],
+            [
+              6391.0,
+              4549.0
+            ],
+            [
+              6391.0,
+              3824.0
+            ],
+            [
+              5570.0,
+              3824.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8517574b-814c-4edd-9cb7-63ffc86dae57",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7374.0,
+              4257.0
+            ],
+            [
+              7374.0,
+              5059.0
+            ],
+            [
+              7920.0,
+              5059.0
+            ],
+            [
+              7920.0,
+              4257.0
+            ],
+            [
+              7374.0,
+              4257.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Moderate to marked mononuclear cell infiltrate",
+          "color": [
+            21,
+            11,
+            49
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Moderate to marked mononuclear cell infiltrate",
+        "match": {
+          "status": "union_mode",
+          "class": "Moderate to marked mononuclear cell infiltrate",
+          "area_a": 11117212.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7d51cf0c-f297-4e15-9065-fd49889fce45",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9664.0,
+              5718.0
+            ],
+            [
+              9664.0,
+              8938.0
+            ],
+            [
+              16617.0,
+              8938.0
+            ],
+            [
+              16617.0,
+              5718.0
+            ],
+            [
+              9664.0,
+              5718.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Marked (>50%) crypt distortion",
+          "color": [
+            0,
+            51,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Marked (>50%) crypt distortion",
+        "match": {
+          "status": "union_mode",
+          "class": "Marked (>50%) crypt distortion",
+          "area_a": 33837265.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "159b2204-dac3-4f3e-a194-41d174e8e3d3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5627.0,
+              14464.0
+            ],
+            [
+              5627.0,
+              14831.0
+            ],
+            [
+              6061.0,
+              14831.0
+            ],
+            [
+              6061.0,
+              14464.0
+            ],
+            [
+              5627.0,
+              14464.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal Plasmacytosis",
+          "color": [
+            202,
+            65,
+            86
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal Plasmacytosis",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal Plasmacytosis",
+          "area_a": 552258.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "d5b1a7c0-938b-469b-9373-d14e8d0983b5",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4756.0,
+              7093.0
+            ],
+            [
+              4756.0,
+              9908.0
+            ],
+            [
+              8823.0,
+              9908.0
+            ],
+            [
+              8823.0,
+              7093.0
+            ],
+            [
+              4756.0,
+              7093.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Marked (>50%) crypt distortion",
+          "color": [
+            0,
+            51,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Marked (>50%) crypt distortion",
+        "match": {
+          "status": "union_mode",
+          "class": "Marked (>50%) crypt distortion",
+          "area_a": 33837265.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "9132b163-10b9-47b6-b959-167e08b39019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5453.0,
+              13570.0
+            ],
+            [
+              5453.0,
+              15929.0
+            ],
+            [
+              7156.0,
+              15929.0
+            ],
+            [
+              7156.0,
+              13570.0
+            ],
+            [
+              5453.0,
+              13570.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Focal (<50%) crypt distortion",
+          "color": [
+            0,
+            255,
+            0
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Focal (<50%) crypt distortion",
+        "match": {
+          "status": "union_mode",
+          "class": "Focal (<50%) crypt distortion",
+          "area_a": 4017377.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "2f81c6ce-e00b-4a9c-a439-1e597c3301c2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6211.0,
+              15606.0
+            ],
+            [
+              6211.0,
+              15866.0
+            ],
+            [
+              6699.0,
+              15866.0
+            ],
+            [
+              6699.0,
+              15606.0
+            ],
+            [
+              6211.0,
+              15606.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal Plasmacytosis",
+          "color": [
+            202,
+            65,
+            86
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2356047",
+        "source": "B",
+        "orig_class": "Basal Plasmacytosis",
+        "match": {
+          "status": "union_mode",
+          "class": "Basal Plasmacytosis",
+          "area_a": 552258.0,
+          "area_b": 0.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "601e1bc3-4dff-422e-ab81-729c198cd28c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15016.0,
+              4963.0
+            ],
+            [
+              15016.0,
+              8202.0
+            ],
+            [
+              17175.0,
+              8202.0
+            ],
+            [
+              17175.0,
+              4963.0
+            ],
+            [
+              15016.0,
+              4963.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "9144748d-894a-4473-8d9c-9ca6ae29e7d2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9722.0,
+              5361.0
+            ],
+            [
+              9722.0,
+              9927.0
+            ],
+            [
+              14977.0,
+              9927.0
+            ],
+            [
+              14977.0,
+              5361.0
+            ],
+            [
+              9722.0,
+              5361.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c654e2bb-ea57-4e1c-b3e5-a3a6448bb0d4",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4694.0,
+              3014.0
+            ],
+            [
+              4694.0,
+              4901.0
+            ],
+            [
+              6141.0,
+              4901.0
+            ],
+            [
+              6141.0,
+              3014.0
+            ],
+            [
+              4694.0,
+              3014.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03a5b5d3-3675-415f-b14f-ac2ff89fa1de",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6263.0,
+              3043.0
+            ],
+            [
+              6263.0,
+              4493.0
+            ],
+            [
+              9180.0,
+              4493.0
+            ],
+            [
+              9180.0,
+              3043.0
+            ],
+            [
+              6263.0,
+              3043.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eecc393d-3505-4ff2-a9da-6f03bc5ad583",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6326.0,
+              4511.0
+            ],
+            [
+              6326.0,
+              5688.0
+            ],
+            [
+              8635.0,
+              5688.0
+            ],
+            [
+              8635.0,
+              4511.0
+            ],
+            [
+              6326.0,
+              4511.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a397c222-3bed-4b90-8d11-ff5ed58f19f6",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5231.0,
+              6240.0
+            ],
+            [
+              5231.0,
+              7486.0
+            ],
+            [
+              7653.0,
+              7486.0
+            ],
+            [
+              7653.0,
+              6240.0
+            ],
+            [
+              5231.0,
+              6240.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6111f9a1-e4a9-4d2e-8c47-1d6f00dc7c4c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4082.0,
+              7007.0
+            ],
+            [
+              4082.0,
+              11673.0
+            ],
+            [
+              5231.0,
+              11673.0
+            ],
+            [
+              5231.0,
+              7007.0
+            ],
+            [
+              4082.0,
+              7007.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c3321e71-1806-4f01-8418-4bb7a7ecf9fb",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6988.0,
+              7525.0
+            ],
+            [
+              6988.0,
+              9913.0
+            ],
+            [
+              9221.0,
+              9913.0
+            ],
+            [
+              9221.0,
+              7525.0
+            ],
+            [
+              6988.0,
+              7525.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "53a60fba-139f-4afd-8f28-b0ec6b20ae60",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9093.0,
+              9979.0
+            ],
+            [
+              9093.0,
+              12892.0
+            ],
+            [
+              11639.0,
+              12892.0
+            ],
+            [
+              11639.0,
+              9979.0
+            ],
+            [
+              9093.0,
+              9979.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f1784465-17cd-4f77-8c52-a500fb563144",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5219.0,
+              10540.0
+            ],
+            [
+              5219.0,
+              13314.0
+            ],
+            [
+              9120.0,
+              13314.0
+            ],
+            [
+              9120.0,
+              10540.0
+            ],
+            [
+              5219.0,
+              10540.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6984184a-d610-4539-846e-069c83764242",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6252.0,
+              13326.0
+            ],
+            [
+              6252.0,
+              13937.0
+            ],
+            [
+              8230.0,
+              13937.0
+            ],
+            [
+              8230.0,
+              13326.0
+            ],
+            [
+              6252.0,
+              13326.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "45ea6a27-a240-4536-90a1-493a39cdec97",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5490.0,
+              13949.0
+            ],
+            [
+              5490.0,
+              16971.0
+            ],
+            [
+              7379.0,
+              16971.0
+            ],
+            [
+              7379.0,
+              13949.0
+            ],
+            [
+              5490.0,
+              13949.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | No ulcer/ moderate to severe activity",
+          "color": [
+            128,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "No ulcer/ moderate to severe activity",
+        "match": {
+          "status": "union_mode",
+          "class": "No ulcer/ moderate to severe activity",
+          "area_a": 0.0,
+          "area_b": 5708558.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7d869817-41bb-4b9f-aab0-daa190a0c800",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5524.0,
+              13394.0
+            ],
+            [
+              5524.0,
+              13918.0
+            ],
+            [
+              6257.0,
+              13918.0
+            ],
+            [
+              6257.0,
+              13394.0
+            ],
+            [
+              5524.0,
+              13394.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "757e4365-df75-4b13-8b89-abb415b42790",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5297.0,
+              7542.0
+            ],
+            [
+              5297.0,
+              10535.0
+            ],
+            [
+              6990.0,
+              10535.0
+            ],
+            [
+              6990.0,
+              7542.0
+            ],
+            [
+              5297.0,
+              7542.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "unknown",
+        "classification": {
+          "name": "C | unknown"
+        },
+        "match": {
+          "status": "union_mode",
+          "class": "unknown",
+          "area_a": 0.0,
+          "area_b": 54664486.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eb58102d-0d3d-40c8-8dd9-0663038dd395",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7015.0,
+              9914.0
+            ],
+            [
+              7015.0,
+              10548.0
+            ],
+            [
+              9096.0,
+              10548.0
+            ],
+            [
+              9096.0,
+              9914.0
+            ],
+            [
+              7015.0,
+              9914.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Ulcer/ erosions",
+          "color": [
+            255,
+            0,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Ulcer/ erosions",
+        "match": {
+          "status": "union_mode",
+          "class": "Ulcer/ erosions",
+          "area_a": 0.0,
+          "area_b": 25912504.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ac04c7ed-4a04-4b57-bf46-10a47263571c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3768.0,
+              2811.0
+            ],
+            [
+              3768.0,
+              17115.0
+            ],
+            [
+              17293.0,
+              17115.0
+            ],
+            [
+              17293.0,
+              2811.0
+            ],
+            [
+              3768.0,
+              2811.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Diffuse crypt distortion (>50% area in each fragment)",
+          "color": [
+            0,
+            51,
+            0
+          ]
+        },
+        "case_key": "2356047",
+        "source": "C",
+        "orig_class": "Diffuse crypt distortion (>50% area in each fragment)",
+        "match": {
+          "status": "union_mode",
+          "class": "Diffuse crypt distortion (>50% area in each fragment)",
+          "area_a": 0.0,
+          "area_b": 193461600.0,
+          "area_intersection": 0.0,
+          "cas": 0.0,
+          "oc": 0.0,
+          "ar": Infinity
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+case_key,class,mode,unit_id,status,nA,nB,a_uids,b_uids,a_feat_ids,b_feat_ids,a_src_files,b_src_files,cas,oc,ar,area_a,area_b,area_intersection
+2326975,Basal Plasmacytosis,union_per_class,UNION,union_mode,6,0,,,,,,,0.0,0.0,inf,9609984.0,0.0,0.0
+2326975,Basal lymphoid aggregates,union_per_class,UNION,union_mode,2,3,,,,,,,0.0,0.0,1.0792290399188815,2398464.0,2588492.0,0.0
+2326975,Basal plasmacytosis,union_per_class,UNION,union_mode,0,4,,,,,,,0.0,0.0,inf,0.0,7553212.0,0.0
+2326975,Crypt absces,union_per_class,UNION,union_mode,0,2,,,,,,,0.0,0.0,inf,0.0,723698.0,0.0
+2326975,Crypt abscess,union_per_class,UNION,union_mode,3,0,,,,,,,0.0,0.0,inf,2740076.0,0.0,0.0
+2326975,Diffuse crypt distortion (>50% area in each fragment),union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,120526545.0,0.0
+2326975,Marked (>50%) crypt distortion,union_per_class,UNION,union_mode,2,0,,,,,,,0.0,0.0,inf,91397632.0,0.0,0.0
+2326975,Moderate to marked mononuclear aggregates,union_per_class,UNION,union_mode,0,2,,,,,,,0.0,0.0,inf,0.0,2946705.0,0.0
+2326975,Moderate to marked mononuclear cell infiltrate,union_per_class,UNION,union_mode,18,0,,,,,,,0.0,0.0,inf,8091648.0,0.0,0.0
+2326975,No ulcer/ mild activity,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,28050.0,0.0
+2326975,No ulcer/ moderate to severe activity,union_per_class,UNION,union_mode,0,5,,,,,,,0.0,0.0,inf,0.0,39082387.0,0.0
+2326975,Ulcer/ erosion,union_per_class,UNION,union_mode,10,0,,,,,,,0.0,0.0,inf,2415651.0,0.0,0.0
+2326975,Ulcer/ erosions,union_per_class,UNION,union_mode,0,10,,,,,,,0.0,0.0,inf,0.0,66745810.0,0.0
+2326975,unknown,union_per_class,UNION,union_mode,0,26,,,,,,,0.0,0.0,inf,0.0,169655295.0,0.0

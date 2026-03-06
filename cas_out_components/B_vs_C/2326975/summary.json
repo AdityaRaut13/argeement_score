@@ -1,0 +1,18 @@
+{
+  "case_key": "2326975",
+  "left_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\AIIMS_G\\AIIMS_G\\Annotated",
+  "right_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\DMC\\DMC",
+  "left_source_label": "B",
+  "right_source_label": "C",
+  "mode": "components",
+  "TP": 2,
+  "FP": 52,
+  "FN": 52,
+  "micro_precision": 0.037037037037037035,
+  "micro_recall": 0.037037037037037035,
+  "micro_f1": 0.037037037037037035,
+  "macro_f1": 0.4,
+  "cas_threshold": 0.35,
+  "sigma": 2.0,
+  "strtree_available": true
+}

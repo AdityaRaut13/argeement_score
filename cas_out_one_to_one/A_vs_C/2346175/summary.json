@@ -1,0 +1,20 @@
+{
+  "case_key": "2346175",
+  "left_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\AIIMSD_all_annotations\\AIIMSD_all_annotations\\Annotated\\EQAS_1_Annotations",
+  "right_root": "C:\\Users\\Aditya\\OneDrive\\Documents\\Academic\\sem2\\thesis\\argument_score\\DMC\\DMC",
+  "left_source_label": "A",
+  "right_source_label": "C",
+  "mode": "one_to_one",
+  "TP": 1,
+  "FP": 42,
+  "FN": 81,
+  "micro_precision": 0.023255813953488372,
+  "micro_recall": 0.012195121951219513,
+  "micro_f1": 0.016000000000000004,
+  "macro_f1": 0.33333333333333337,
+  "cas_threshold": 0.35,
+  "sigma": 2.0,
+  "matching": "greedy",
+  "hungarian_available": false,
+  "strtree_available": true
+}

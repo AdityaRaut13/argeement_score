@@ -1,0 +1,12 @@
+class,gt,pred,TP,FP,FN,precision,recall,f1,mean_cas_on_matches,mean_oc_on_matches,mean_ar_on_matches,area_a,area_b,area_intersection
+Architecture normal,1,0,0,0,1,nan,0.0,nan,nan,nan,nan,,,
+Basal Plasmacytosis,4,0,0,0,4,nan,0.0,nan,nan,nan,nan,,,
+Basal lymphoid aggregates,3,0,0,0,3,nan,0.0,nan,nan,nan,nan,,,
+Basal plasmacytosis,0,1,0,1,0,0.0,nan,nan,nan,nan,nan,,,
+Focal (<50%) crypt distortion,4,0,0,0,4,nan,0.0,nan,nan,nan,nan,,,
+Focal crypt distortion (50% area of each fragment),0,1,0,1,0,0.0,nan,nan,nan,nan,nan,,,
+Moderate to marked mononuclear aggregates,0,2,0,2,0,0.0,nan,nan,nan,nan,nan,,,
+No ulcer/ mild activity (occasional neutrophils in LM or epithe),7,0,0,0,7,nan,0.0,nan,nan,nan,nan,,,
+No/ mild mononuclear cell infiltrate,19,0,0,0,19,nan,0.0,nan,nan,nan,nan,,,
+Ulcer/ erosions,0,4,0,4,0,0.0,nan,nan,nan,nan,nan,,,
+unknown,0,9,0,9,0,0.0,nan,nan,nan,nan,nan,,,

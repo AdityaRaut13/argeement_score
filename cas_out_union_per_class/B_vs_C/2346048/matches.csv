@@ -1,0 +1,11 @@
+case_key,class,mode,unit_id,status,nA,nB,a_uids,b_uids,a_feat_ids,b_feat_ids,a_src_files,b_src_files,cas,oc,ar,area_a,area_b,area_intersection
+2346048,Architecture normal,union_per_class,UNION,union_mode,0,2,,,,,,,0.0,0.0,inf,0.0,701354.0,0.0
+2346048,Basal lymphoid aggregates,union_per_class,UNION,union_mode,1,0,,,,,,,0.0,0.0,inf,308880.0,0.0,0.0
+2346048,Crypt absces,union_per_class,UNION,union_mode,0,3,,,,,,,0.0,0.0,inf,0.0,768787.0,0.0
+2346048,Moderate to marked mononuclear aggregates,union_per_class,UNION,union_mode,0,3,,,,,,,0.0,0.0,inf,0.0,2308766.0,0.0
+2346048,Moderate to marked mononuclear cell infiltrate,union_per_class,UNION,union_mode,6,0,,,,,,,0.0,0.0,inf,13782387.0,0.0,0.0
+2346048,No ulcer/ mild activity,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,262971.0,0.0
+2346048,No ulcer/ moderate to severe activity,union_per_class,UNION,union_mode,0,6,,,,,,,0.0,0.0,inf,0.0,4940003.0,0.0
+2346048,Ulcer/ erosion,union_per_class,UNION,union_mode,4,0,,,,,,,0.0,0.0,inf,2455711.0,0.0,0.0
+2346048,Ulcer/ erosions,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,7355500.0,0.0
+2346048,unknown,union_per_class,UNION,union_mode,0,17,,,,,,,0.0,0.0,inf,0.0,47071000.0,0.0

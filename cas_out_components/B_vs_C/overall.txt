@@ -1,0 +1,12 @@
+matched_cases: 11
+mode: components
+left_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\AIIMS_G\AIIMS_G\Annotated
+right_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\DMC\DMC
+left_source_label: B
+right_source_label: C
+total_TP: 3
+total_FP: 282
+total_FN: 421
+micro_precision: 0.010526
+micro_recall: 0.007075
+micro_f1: 0.008463

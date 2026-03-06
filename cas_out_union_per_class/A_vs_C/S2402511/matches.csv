@@ -1,0 +1,12 @@
+case_key,class,mode,unit_id,status,nA,nB,a_uids,b_uids,a_feat_ids,b_feat_ids,a_src_files,b_src_files,cas,oc,ar,area_a,area_b,area_intersection
+S2402511,Basal lymphoid aggregates,union_per_class,UNION,union_mode,3,0,,,,,,,0.0,0.0,inf,3786358.0,0.0,0.0
+S2402511,Basal plasmacytosis,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,614790.0,0.0
+S2402511,Diffuse crypt distortion (>50% area in each fragment),union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,67774674.0,0.0
+S2402511,Marked (>50%) crypt distortion,union_per_class,UNION,union_mode,3,0,,,,,,,0.0,0.0,inf,63807488.0,0.0,0.0
+S2402511,Moderate to marked mononuclear cell infiltrate,union_per_class,UNION,union_mode,22,0,,,,,,,0.0,0.0,inf,5007452.0,0.0,0.0
+S2402511,No ulcer/ moderate to severe activity,union_per_class,UNION,union_mode,0,3,,,,,,,0.0,0.0,inf,0.0,38484294.0,0.0
+S2402511,No/ mild mononuclear cell infiltrate,union_per_class,UNION,union_mode,9,0,,,,,,,0.0,0.0,inf,994095.0,0.0,0.0
+S2402511,No/mild mononuclear aggregates,union_per_class,UNION,union_mode,0,1,,,,,,,0.0,0.0,inf,0.0,5513712.0,0.0
+S2402511,Ulcer/ erosion,union_per_class,UNION,union_mode,4,0,,,,,,,0.0,0.0,inf,611065.0,0.0,0.0
+S2402511,Ulcer/ erosions,union_per_class,UNION,union_mode,0,5,,,,,,,0.0,0.0,inf,0.0,6278033.0,0.0
+S2402511,unknown,union_per_class,UNION,union_mode,0,10,,,,,,,0.0,0.0,inf,0.0,55098823.0,0.0

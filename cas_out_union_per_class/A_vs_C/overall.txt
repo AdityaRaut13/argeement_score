@@ -1,0 +1,12 @@
+matched_cases: 11
+mode: union_per_class
+left_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\AIIMSD_all_annotations\AIIMSD_all_annotations\Annotated\EQAS_1_Annotations
+right_root: C:\Users\Aditya\OneDrive\Documents\Academic\sem2\thesis\argument_score\DMC\DMC
+left_source_label: A
+right_source_label: C
+total_area_a: 1431045817.0
+total_area_b: 3657009373.0
+total_area_intersection: 421067.0
+micro_precision_area: 0.000115
+micro_recall_area: 0.000294
+micro_f1_area: 0.000166

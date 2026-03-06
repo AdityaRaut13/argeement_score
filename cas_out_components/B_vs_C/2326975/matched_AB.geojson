@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "14c5b84f-8d54-4f76-a937-dee3922d95d2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8249.0,
+              38647.0
+            ],
+            [
+              8249.0,
+              39545.0
+            ],
+            [
+              9177.0,
+              39545.0
+            ],
+            [
+              9177.0,
+              38647.0
+            ],
+            [
+              8249.0,
+              38647.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2326975",
+        "source": "B",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "component_tp",
+          "component_id": "Basal lymphoid aggregates:comp_0",
+          "class": "Basal lymphoid aggregates",
+          "nA": 1,
+          "nB": 1,
+          "cas_union": 0.9435622150475265,
+          "oc_union": 0.9642857142857143,
+          "ar_union": 1.5172453973432767,
+          "area_a_union": 833344.0,
+          "area_b_union": 549248.0,
+          "area_intersection_union": 529632.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "2609dd78-3c7b-4a3a-a26d-8fb0ac3b3329",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6377.0,
+              40732.0
+            ],
+            [
+              6377.0,
+              41812.0
+            ],
+            [
+              7364.0,
+              41812.0
+            ],
+            [
+              7364.0,
+              40732.0
+            ],
+            [
+              6377.0,
+              40732.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "B | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "isLocked": true,
+        "case_key": "2326975",
+        "source": "B",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "component_tp",
+          "component_id": "Basal lymphoid aggregates:comp_1",
+          "class": "Basal lymphoid aggregates",
+          "nA": 1,
+          "nB": 1,
+          "cas_union": 0.7969371620615819,
+          "oc_union": 0.7976366322008862,
+          "ar_union": 1.0873858508042469,
+          "area_a_union": 1065960.0,
+          "area_b_union": 980296.0,
+          "area_intersection_union": 781920.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f2d5d03e-dc64-419d-8a6b-d2da78f89550",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8217.0,
+              38811.0
+            ],
+            [
+              8217.0,
+              39424.0
+            ],
+            [
+              9113.0,
+              39424.0
+            ],
+            [
+              9113.0,
+              38811.0
+            ],
+            [
+              8217.0,
+              38811.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "case_key": "2326975",
+        "source": "C",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "component_tp",
+          "component_id": "Basal lymphoid aggregates:comp_0",
+          "class": "Basal lymphoid aggregates",
+          "nA": 1,
+          "nB": 1,
+          "cas_union": 0.9435622150475265,
+          "oc_union": 0.9642857142857143,
+          "ar_union": 1.5172453973432767,
+          "area_a_union": 833344.0,
+          "area_b_union": 549248.0,
+          "area_intersection_union": 529632.0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "71aff003-525a-45a1-b476-41e9e60dd606",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6405.0,
+              40660.0
+            ],
+            [
+              6405.0,
+              42014.0
+            ],
+            [
+              7129.0,
+              42014.0
+            ],
+            [
+              7129.0,
+              40660.0
+            ],
+            [
+              6405.0,
+              40660.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectType": "annotation",
+        "classification": {
+          "name": "C | Basal lymphoid aggregates",
+          "color": [
+            0,
+            0,
+            255
+          ]
+        },
+        "case_key": "2326975",
+        "source": "C",
+        "orig_class": "Basal lymphoid aggregates",
+        "match": {
+          "status": "component_tp",
+          "component_id": "Basal lymphoid aggregates:comp_1",
+          "class": "Basal lymphoid aggregates",
+          "nA": 1,
+          "nB": 1,
+          "cas_union": 0.7969371620615819,
+          "oc_union": 0.7976366322008862,
+          "ar_union": 1.0873858508042469,
+          "area_a_union": 1065960.0,
+          "area_b_union": 980296.0,
+          "area_intersection_union": 781920.0
+        }
+      }
+    }
+  ]
+}

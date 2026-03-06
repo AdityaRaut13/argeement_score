@@ -1,0 +1,12 @@
+class,gt,pred,TP,FP,FN,precision,recall,f1,mean_cas_on_matches,mean_oc_on_matches,mean_ar_on_matches,area_a,area_b,area_intersection
+Basal Plasmacytosis,14,0,,,,0.0,0.0,nan,0.0,0.0,inf,9438538.0,0.0,0.0
+Basal lymphoid aggregates,2,0,,,,0.0,0.0,nan,0.0,0.0,inf,1317756.0,0.0,0.0
+Crypt absces,0,4,,,,0.0,0.0,nan,0.0,0.0,inf,0.0,3146397.0,0.0
+Crypt abscess,6,0,,,,0.0,0.0,nan,0.0,0.0,inf,4606674.0,0.0,0.0
+Marked (>50%) crypt distortion,23,0,,,,0.0,0.0,nan,0.0,0.0,inf,303619564.0,0.0,0.0
+Moderate to marked mononuclear cell infiltrate,34,0,,,,0.0,0.0,nan,0.0,0.0,inf,15280804.0,0.0,0.0
+No ulcer/ moderate to severe activity,0,8,,,,0.0,0.0,nan,0.0,0.0,inf,0.0,76004397.0,0.0
+No/ mild mononuclear cell infiltrate,1,0,,,,0.0,0.0,nan,0.0,0.0,inf,62620.0,0.0,0.0
+Ulcer/ erosion,23,0,,,,0.0,0.0,nan,0.0,0.0,inf,4445152.0,0.0,0.0
+Ulcer/ erosions,0,5,,,,0.0,0.0,nan,0.0,0.0,inf,0.0,18229653.0,0.0
+unknown,1,25,,,,0.00020716686718899892,1.0,0.000414247915935014,0.000124275368020516,1.0,4827.026703491621,123467.0,595978506.0,123467.0
